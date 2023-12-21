@@ -29,7 +29,6 @@ class JokeListScreen extends StatelessWidget {
         body: BlocBuilder<JokeListBloc, JokeListState>(
           builder: (context, state) {
             if (state is JokeListLoading) {
-
               return const Center(child: CircularProgressIndicator());
             } else if (state is JokeLoadSuccess) {
               return JokeListElem(jokes: state.jokeList);

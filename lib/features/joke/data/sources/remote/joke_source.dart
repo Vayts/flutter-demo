@@ -22,7 +22,7 @@ class JokeRemoteDataSourceImpl implements JokeRemoteDataSource {
       Uri.parse('https://api.openai.com/v1/chat/completions'),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer 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',
       },
       body: jsonEncode({
         'model': 'gpt-3.5-turbo',
