@@ -4,7 +4,6 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_demo_joke/features/joke/domain/usecases/get_joke.dart';
 import 'package:flutter_demo_joke/features/joke/domain/usecases/like_joke.dart';
 import 'package:meta/meta.dart';
-
 import '../../../domain/entities/joke.dart';
 
 part 'joke_event.dart';

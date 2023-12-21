@@ -1,11 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_demo_joke/features/joke/domain/usecases/get_joke.dart';
 import 'package:flutter_demo_joke/features/joke/domain/usecases/get_joke_list.dart';
-import 'package:meta/meta.dart';
-
-import '../../../domain/entities/joke.dart';
 import 'joke_list_event.dart';
 import 'joke_list_state.dart';
 
@@ -23,7 +19,7 @@ class JokeListBloc extends Bloc<JokeListEvent, JokeListState> {
       final joke = await getFavoritesJokes();
       emit(JokeLoadSuccess(joke));
     } catch (error) {
-      print(error.toString());
+      print(error);
       emit(JokeLoadError('Помилка'));
     }
   }

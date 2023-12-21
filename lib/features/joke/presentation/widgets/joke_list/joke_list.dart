@@ -20,8 +20,7 @@ class JokeListElem extends StatelessWidget {
           final joke = jokes[index];
           final int jokeNumber = jokes.length - index;
           return Card(
-            // elevation: 4,
-            surfaceTintColor : Colors.white,
+            surfaceTintColor: Colors.white,
             margin: const EdgeInsets.all(10),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
@@ -38,7 +37,7 @@ class JokeListElem extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                  const SizedBox(height: 10), // Пространство между заголовком и текстом
+                  const SizedBox(height: 10),
                   Text(
                     joke.text,
                     style: const TextStyle(
